@@ -1,0 +1,20 @@
+.criminalsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.criminal {
+    border-style: dotted;
+    border-width: 1px;
+    margin: 10px;
+    width: 15rem;
+    flex-wrap: wrap;    
+    flex-basis: 25%;
+    
+}
+
+.criminal--name {
+    font-size: x-large;
+    
+}
