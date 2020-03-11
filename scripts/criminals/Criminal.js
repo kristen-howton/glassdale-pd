@@ -1,4 +1,4 @@
-export const Criminal = (criminalObject) => {
+export const Criminal = criminalObject => {
     return `
     <article class= "criminal">
         <p class= "criminal--name">${criminalObject.name} </p>   
