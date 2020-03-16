@@ -1,0 +1,16 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "noteText": "This person seems suspicious",
+      "timestamp": 1584382255712,
+      "criminal": "Madelyn Lebsack"
+    },
+    {
+      "noteText": "test",
+      "criminal": "testing",
+      "timestamp": 1584392029141,
+      "id": 2
+    }
+  ]
+}
