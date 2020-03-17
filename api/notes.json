@@ -11,6 +11,12 @@
       "criminal": "testing",
       "timestamp": 1584392029141,
       "id": 2
+    },
+    {
+      "noteText": "Does note form save work?",
+      "criminal": "Testing",
+      "timestamp": 1584464020103,
+      "id": 3
     }
   ]
 }
