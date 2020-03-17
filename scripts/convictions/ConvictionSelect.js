@@ -27,7 +27,7 @@ const ConvictionSelect = () => {
     // Get all convictions from application state
     const convictions = useConvictions()
 
-    const render = (convictionsCollection) => {
+    const render = convictionsCollection => {
         /*
             Use interpolation here to invoke the map() method on
             the convictionsCollection to generate the option elements.
