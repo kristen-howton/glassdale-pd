@@ -39,20 +39,17 @@ const render = () => {
     contentTarget.classList.add("invisible")
     contentTarget.innerHTML = `
         <fieldset>
-            <label for="noteText">Note:</label>
-            <input type="text" id="noteText">
+            <label class="label label--notes" for="noteText">Note:</label>
+            <textarea id="noteText"></textarea>
         </fieldset>
         <fieldset>
-            <label for="criminal">Criminal:</label>
+            <label class="label label--notes" for="criminal">Criminal:</label>
             <input type="text" id="criminal">
         </fieldset>
         <button id="saveNote">Save Note</button>
     `
 }
 
-const NoteForm = () => {
+export const NoteForm = () => {
     render()
 }
-
- 
-export default NoteForm
