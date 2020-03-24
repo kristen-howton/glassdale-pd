@@ -4,19 +4,8 @@
       "id": 1,
       "noteText": "This person seems suspicious",
       "timestamp": 1584382255712,
-      "criminal": "Madelyn Lebsack"
-    },
-    {
-      "noteText": "test",
-      "criminal": "testing",
-      "timestamp": 1584392029141,
-      "id": 2
-    },
-    {
-      "noteText": "Does note form save work?",
-      "criminal": "Testing",
-      "timestamp": 1584464020103,
-      "id": 3
+      "criminal": "Madelyn Lebsack",
+      "criminalId": 1
     }
   ]
 }
