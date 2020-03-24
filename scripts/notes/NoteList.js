@@ -13,10 +13,11 @@ let visibility = false
 /*
     Event handlers
 */
+
 eventHub.addEventListener("noteStateChanged", customEvent => {
     const allTheNotes = useNotes()
     const criminalCollection = useCriminals()
-    render(allTheNotes, criminalCollection)
+    render()
 })
 
 eventHub.addEventListener("allNotesClicked", customEvent => {
@@ -30,7 +31,10 @@ eventHub.addEventListener("allNotesClicked", customEvent => {
     }
 })
 
-const render = (allTheNotes, criminalCollection) => {
+const render = () => {
+    const allTheNotes = useNotes()
+    const criminalCollection = useCriminals()
+
     if (visibility) {
         contentTarget.classList.remove("invisible")
     }
@@ -38,17 +42,16 @@ const render = (allTheNotes, criminalCollection) => {
         contentTarget.classList.add("invisible")
     }
 
-
-        contentTarget.innerHTML = allTheNotes.map(note => {
-                const relatedCriminal = criminalCollection.find(criminal => criminal.id === note.criminalId)
-                return Note(note, relatedCriminal)
-            }
-        ).join("")
-   
+    contentTarget.innerHTML = allTheNotes.map(note => {
+            const relatedCriminal = criminalCollection.find(criminal => criminal.id === note.criminalId)
+            return Note(note, relatedCriminal)
         }
+    ).join("")
+   
+}
+
 export const NotesList = () => {
     const allTheNotes = useNotes()
     const criminalCollection = useCriminals()
-
     render(allTheNotes, criminalCollection)
 }
