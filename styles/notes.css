@@ -1,3 +1,14 @@
 .invisible {
     display:none;
 }
+
+.note {
+    border: 1px dotted rgb(28, 14, 90);
+    color:  rgb(28, 14, 90);
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    padding: 0.5em;
+    margin: 0.5em;
+}
