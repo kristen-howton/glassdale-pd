@@ -29,6 +29,14 @@ export const getNotes = () => {
         })
 }
 
+export const deleteNote = noteId => {
+    return fetch(`http://localhost:8088/notes/${noteId}`, {
+        method: "DELETE"
+    })
+        .then(getNotes)
+        .then(dispatchStateChangeEvent)
+}
+
 /*
     saveNote takes a note object and turns it into JSON string, POST string to notes API
     then it getNotes 
@@ -47,3 +55,4 @@ export const saveNote = note => {
     .then(getNotes)
     .then(dispatchStateChangeEvent)
 }
+

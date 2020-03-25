@@ -9,7 +9,7 @@
     color: rgb(146, 95, 95);
     background-color: whitesmoke;
     padding: 0.5em;
-    margin: 0.5em;
+    margin: 1em;
     display: flex;
     flex-direction: column;
     flex-basis: 30%;

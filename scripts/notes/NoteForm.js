@@ -6,6 +6,13 @@ const eventHub = document.querySelector(".container")
 
 let visibility = false
 
+/*
+adding an event listener to the note form button, which was a custom event
+that we created and toggling the visibility.  visibility is set to false on line 7, 
+and we do an if/else and references the contentTarget(notesContainer) 
+If visibility is false then adds the class of invisible, else if visibility 
+is true, then it removes the class of invisible
+*/
 eventHub.addEventListener("noteFormButtonClicked", customEvent => {
     visibility = !visibility
 
