@@ -5,8 +5,8 @@
 }
 
 .statement {
-    border: 1px dotted rgb(146, 95, 95);
-    color: rgb(146, 95, 95);
+    border: 1px dotted rgb(6, 82, 50);
+    color: rgb(6, 82, 50);
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
